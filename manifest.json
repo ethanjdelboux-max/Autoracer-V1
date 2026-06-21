@@ -1,0 +1,27 @@
+{
+   "content_scripts": [ {
+      "exclude_matches": [ "*://*/race" ],
+      "id": "auto-typing",
+      "js": [ "AutoTyping.js" ],
+      "matches": [ "https://*.nitrotype.com/garage" ],
+      "run_at": "document_end"
+   }, {
+      "id": "active-session",
+      "js": [ "ActiveSession.js" ],
+      "matches": [ "https://*.nitrotype.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "This extension automatically types on nitrotype.com.",
+   "icons": {
+      "128": "assets/icons/favicon-32x32.png",
+      "16": "assets/icons/favicon-16x16.png",
+      "32": "assets/icons/favicon-32x32.png",
+      "48": "assets/icons/favicon-32x32.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg+HoNAZz8uLcvchYn5+/+ovGhJjrHlcYT09Wy+BFOpxPFRhnwlBkChmqOiZV/bSi7koJ2TjyuFqYb9IJLbBsGcskhaPWOZvYrtq2n493EJOY/Pnap5F7EiFfa/VlZY12HDBscvSiseoGuAZuV1wbnXmyxgM5RVmmojqWkbD8MQGqXDOFzGRUT6Waovh7EAk74hfgTfF2d72cHgRNEfr4m0ZyupCrySuCxX3bnXpaiPbHnPu1Wd9bbLbAqzCOBMNagkFceLc0Enao9Ougg+fuTvIWy3BYFMgBrx/nEBp9GRDPcJV9F9sE4Gl/6oIzdB+l6fqKSvXHvvoS8cIw/E1CuwIDAQAB",
+   "manifest_version": 3,
+   "name": "AutoTyper",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.2"
+}
